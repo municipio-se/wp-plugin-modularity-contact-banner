@@ -1,47 +1,27 @@
-# modularity-contact-banner
-Contact Banner module for modularity
+# Modularity Contact Banner
 
-## Getting Started
-Get the latest version and follow the installation steps bellow.
+This plugin is an LTS version of the [Modularity Contact Banner plugin](https://github.com/helsingborg-stad/modularity-contact-banner).
 
-### Dependencies
-Wordpress, Municipio and Modularity (version 2.11.0 or higher)
+## Installation
 
-### Installing
-Get a development enviroment running by doing following:
-
-Activate
-
-```
-Activate plugin.
-Activate the module in modularity
-Add module to page or post
-```
-
-Settings
-
-```
-
-
-```
-## Filters
-
-
-
-## Built With
-
-* PHP
-
-## Releases
-
-https://github.com/helsingborg-stad/modularity-contact-banner/releases
-
-## Authors
-
-* **Sebastian Thulin**
-* **Dan Nilsson**
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+1. Add the following to your `composer.json` file:
+   ```json
+   {
+     "repositories": [
+       {
+         "type": "vcs",
+         "url": "https://github.com/municipio-lts/wp-plugin-modularity-contact-banner-2024.git",
+         "only": [
+           "municipio-lts/wp-plugin-modularity-contact-banner-2024"
+         ],
+         "no-api": true
+       },
+     ]
+   }
+   ```
+2. Install the package:
+   ```bash
+   composer require municipio-lts/wp-plugin-modularity-contact-banner-2024:dev-lts/v3.1.5
+   ```
+3. Activate the plugin in WordPress.
+4. Activate the module under _Modularity → Options_.
