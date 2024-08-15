@@ -1,5 +1,5 @@
 {
-    "name": "helsingborg-stad/modularity-contact-banner",
+    "name": "municipio-lts/wp-plugin-modularity-contact-banner-2024",
     "description": "Contact Banner",
     "type": "wordpress-plugin",
     "license": "MIT",
@@ -7,20 +7,44 @@
         {
             "name": "Sebastian Thulin",
             "email": "sebastian.thulin@helsingborg.se"
+        },
+        {
+            "name": "Whitespace",
+            "email": "code@whitespace.se"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {},
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/modularity-contact-banner.git"
+            "url": "https://github.com/municipio-lts/wp-plugin-modularity-contact-banner-2024.git"
         }
     ],
+    "minimum-stability": "stable",
+    "extra": {
+        "installer-name": "modularity-contact-banner",
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}/": [
+                "vendor:wpackagist-plugin",
+                "type:wordpress-plugin",
+                "type:wordpress-muplugin"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
     "autoload": {
         "psr-4": {
             "ModularityContactBanner\\": "source/php/"
         }
     },
-    "version": "3.1.5"
+    "require": {
+        "composer/installers": "~2.2"
+    },
+    "require-dev": {
+        "10up/wp_mock": "dev-trunk#1.0.1",
+        "php-mock/php-mock-mockery": "^1.4"
+    }
 }
