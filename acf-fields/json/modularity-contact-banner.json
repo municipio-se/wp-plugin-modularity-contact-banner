@@ -346,25 +346,6 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
-                {
-                    "key": "field_5e1ee12b3cdbe",
-                    "label": "onClick - Call to action",
-                    "name": "mod_contactbanner_cta_onclick",
-                    "type": "text",
-                    "instructions": "Enter javascript",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
                 }
             ]
         }
@@ -387,4 +368,4 @@
     "active": true,
     "description": ""
 }]
-
+

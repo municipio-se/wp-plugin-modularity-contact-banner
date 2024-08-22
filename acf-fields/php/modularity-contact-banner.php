@@ -1,7 +1,9 @@
 <?php 
 
-if (function_exists('acf_add_local_field_group')) {
-    acf_add_local_field_group(array(
+
+if (function_exists('acf_add_local_field_group')) {
+
+    acf_add_local_field_group(array(
     'key' => 'group_5e1d8f163f200',
     'title' => __('Modularity Contact Banner', 'modularity-contact-banner'),
     'fields' => array(
@@ -354,25 +356,6 @@ Just click the icon to copy or copy the icon name and paste the icon name here.'
                     'append' => '',
                     'maxlength' => '',
                 ),
-                5 => array(
-                    'key' => 'field_5e1ee12b3cdbe',
-                    'label' => __('onClick - Call to action', 'modularity-contact-banner'),
-                    'name' => 'mod_contactbanner_cta_onclick',
-                    'type' => 'text',
-                    'instructions' => __('Enter javascript', 'modularity-contact-banner'),
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array(
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'default_value' => '',
-                    'placeholder' => '',
-                    'prepend' => '',
-                    'append' => '',
-                    'maxlength' => '',
-                ),
             ),
         ),
     ),
@@ -394,4 +377,5 @@ Just click the icon to copy or copy the icon name and paste the icon name here.'
     'active' => true,
     'description' => '',
 ));
-}
+
+}
