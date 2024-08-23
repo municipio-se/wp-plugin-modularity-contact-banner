@@ -21,6 +21,10 @@ define('MODULARITYCONTACTBANNER_URL', plugins_url('', __FILE__));
 define('MODULARITYCONTACTBANNER_TEMPLATE_PATH', MODULARITYCONTACTBANNER_PATH . 'templates/');
 define('MODULARITYCONTACTBANNER_MODULE_VIEW_PATH', plugin_dir_path(__FILE__) . 'source/php/Module/views');
 define('MODULARITYCONTACTBANNER_MODULE_PATH', MODULARITYCONTACTBANNER_PATH . 'source/php/Module/');
+define(
+  "MODULARITYCONTACTBANNER_AUTOLOAD_PATH",
+  MODULARITYCONTACTBANNER_PATH . "/autoload",
+);
 
 load_plugin_textdomain('modularity-contact-banner', false, plugin_basename(dirname(__FILE__)) . '/languages');
 
@@ -50,3 +54,7 @@ add_action('plugins_loaded', function () {
     ));
     $acfExportManager->import();
 });
+
+array_map(static function () {
+    include_once func_get_args()[0];
+  }, glob(MODULARITYCONTACTBANNER_AUTOLOAD_PATH . "/*.php"));

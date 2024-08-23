@@ -281,11 +281,7 @@ if (function_exists('acf_add_local_field_group')) {
                     'key' => 'field_5e1ed6cd3cdba',
                     'label' => __('Icon', 'modularity-contact-banner'),
                     'name' => 'mod_contactbanner_cta_icon',
-                    'type' => 'text',
-                    'instructions' => __('You can find the icons we use at following address:
-http://v2.styleguide.helsingborg.se/icons
-
-Just click the icon to copy or copy the icon name and paste the icon name here.', 'modularity-contact-banner'),
+                    'type' => 'select',
                     'required' => 0,
                     'conditional_logic' => 0,
                     'wrapper' => array(
@@ -294,6 +290,8 @@ Just click the icon to copy or copy the icon name and paste the icon name here.'
                         'id' => '',
                     ),
                     'default_value' => '',
+                    'choices' => [],
+                    'ui' => 1,
                     'placeholder' => '',
                     'prepend' => '',
                     'append' => '',
