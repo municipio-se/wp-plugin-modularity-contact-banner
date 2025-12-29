@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/municipio-lts/wp-plugin-modularity-contact-banner-2024.git"
+            "url": "https://github.com/municipio-se/wp-plugin-modularity-contact-banner.git"
         }
     ],
     "minimum-stability": "stable",
