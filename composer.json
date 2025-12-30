@@ -1,50 +1,50 @@
 {
-    "name": "municipio/wp-plugin-modularity-contact-banner",
-    "description": "Contact Banner",
-    "type": "wordpress-plugin",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Sebastian Thulin",
-            "email": "sebastian.thulin@helsingborg.se"
-        },
-        {
-            "name": "Whitespace",
-            "email": "code@whitespace.se"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/municipio-se/wp-plugin-modularity-contact-banner.git"
-        }
-    ],
-    "minimum-stability": "stable",
-    "extra": {
-        "installer-name": "modularity-contact-banner",
-        "installer-paths": {
-            "vendor/{$vendor}/{$name}/": [
-                "vendor:wpackagist-plugin",
-                "type:wordpress-plugin",
-                "type:wordpress-muplugin"
-            ]
-        }
+  "name": "municipio/wp-plugin-modularity-contact-banner",
+  "description": "Contact Banner",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Sebastian Thulin",
+      "email": "sebastian.thulin@helsingborg.se"
     },
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "ModularityContactBanner\\": "source/php/"
-        }
-    },
-    "require": {
-        "composer/installers": "~2.2"
-    },
-    "require-dev": {
-        "10up/wp_mock": "dev-trunk#1.0.1",
-        "php-mock/php-mock-mockery": "^1.4"
+    {
+      "name": "Whitespace",
+      "email": "code@whitespace.se"
     }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/municipio-se/wp-plugin-modularity-contact-banner.git"
+    }
+  ],
+  "minimum-stability": "stable",
+  "extra": {
+    "installer-name": "modularity-contact-banner",
+    "installer-paths": {
+      "vendor/{$vendor}/{$name}/": [
+        "vendor:wpackagist-plugin",
+        "type:wordpress-plugin",
+        "type:wordpress-muplugin"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "ModularityContactBanner\\": "source/php/"
+    }
+  },
+  "require": {
+    "composer/installers": "~2.2"
+  },
+  "require-dev": {
+    "10up/wp_mock": "dev-trunk#1.0.1",
+    "php-mock/php-mock-mockery": "^1.4"
+  }
 }
