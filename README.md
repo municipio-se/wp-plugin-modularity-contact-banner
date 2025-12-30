@@ -1,6 +1,6 @@
 # Modularity Contact Banner
 
-This plugin is an LTS version of the [Modularity Contact Banner plugin v3.1.5](https://github.com/helsingborg-stad/modularity-contact-banner/tree/3.1.5).
+This plugin is a [Municipio LTS](https://github.com/municipio-se/municipio-lts) version of the [Modularity Contact Banner plugin v3.1.5](https://github.com/helsingborg-stad/modularity-contact-banner/tree/3.1.5).
 
 ## Changes in this Fork
 
