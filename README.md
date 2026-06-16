@@ -1,6 +1,15 @@
 # Modularity Contact Banner
 
-This plugin is a [Municipio LTS](https://github.com/municipio-se/municipio-lts) version of the [Modularity Contact Banner plugin v3.1.5](https://github.com/helsingborg-stad/modularity-contact-banner/tree/3.1.5).
+This plugin is a [Municipio LTS](https://github.com/municipio-se/municipio-lts)
+version of Helsingborg stad's
+[Modularity Contact Banner plugin](https://github.com/helsingborg-stad/modularity-contact-banner).
+
+## Fork Base
+
+This LTS fork is based on upstream tag
+[`3.1.5`](https://github.com/helsingborg-stad/modularity-contact-banner/tree/3.1.5),
+commit
+[`509dd4d`](https://github.com/helsingborg-stad/modularity-contact-banner/commit/509dd4d2c6ef4d41a3ea13a5e1b39e3098136a21).
 
 ## Changes in this Fork
 
